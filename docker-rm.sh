@@ -16,9 +16,9 @@ do
    docker rmi -f $line
 done
 
-rm -rf db/mysql/volumes/* 
+rm -rf db
 rm -rf app bin config config.ru lib log public test tmp 
-rm -rf vender/
+rm -rf vendor/
 
 echo ====================================================================================================
 docker ps -a
