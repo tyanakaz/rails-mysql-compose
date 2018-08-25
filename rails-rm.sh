@@ -1,9 +1,11 @@
 #!/bin/sh
 
-rm -rf db
-rm -rf app bin config config.ru lib log public test tmp 
-rm -rf vendor/
+REMOVEFILE="app db bin config config.ru lib log public test tmp vendor Gemfile.lock"
 
+rm -rf $REMOVEFILE
+
+echo ====================================================================================================
+echo remove $REMOVEFILE
 echo ====================================================================================================
 ls -al
 echo ====================================================================================================
