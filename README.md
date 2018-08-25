@@ -3,7 +3,7 @@
   
 ## Create development environment
 
-Please run the docker-rails.sh script.
+Please run the rails-compose.sh script.
   
   
 ## Initialization of development environment
