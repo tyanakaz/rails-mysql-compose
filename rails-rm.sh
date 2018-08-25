@@ -1,4 +1,9 @@
 #!/bin/sh
 
-rsync -a docker.org/* . --exclude 'docker.org'
+rm -rf db
+rm -rf app bin config config.ru lib log public test tmp 
+rm -rf vendor/
 
+echo ====================================================================================================
+ls -al
+echo ====================================================================================================
