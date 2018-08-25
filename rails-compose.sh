@@ -1,7 +1,5 @@
 #!/bin/sh
 
-mkdir docker.org
-rsync -a * docker.org --exclude 'docker.org'
 touch Gemfile.lock
 docker-compose run web rails new . --force --database=mysql && sleep 5 && docker-compose build 
 sleep 5
