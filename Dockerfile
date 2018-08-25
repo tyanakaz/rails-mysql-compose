@@ -1,8 +1,8 @@
 FROM ruby:2.5.1
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN mkdir /myapp
+RUN mkdir /usr/src/app
 WORKDIR /myapp
-ADD Gemfile /myapp/Gemfile
-ADD Gemfile.lock /myapp/Gemfile.lock
+ADD Gemfile /usr/src/app/Gemfile
+ADD Gemfile.lock /usr/src/app/Gemfile.lock
 RUN bundle install
-ADD . /myapp
+ADD . /usr/src/app
