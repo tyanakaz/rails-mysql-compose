@@ -2,7 +2,7 @@
 
 touch Gemfile.lock
 
-docker-compose run api rails new . --force-rm --database=mysql 
+docker-compose run api rails new . --database=mysql 
 
 sleep 5 
 
