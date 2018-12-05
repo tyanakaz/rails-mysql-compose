@@ -4,7 +4,7 @@ touch Gemfile.lock
 
 
 # Full stack
-#docker-compose run api rails new . --database=mysql
+# docker-compose run api rails new . --database=mysql
 
 # API
 docker-compose run api rails new . --database=mysql --api 
