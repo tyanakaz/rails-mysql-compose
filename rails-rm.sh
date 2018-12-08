@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REMOVEFILE="app db bin config config.ru lib log public test tmp vendor package.json Gemfile.lock"
+REMOVEFILE="app db bin config config.ru  Rakefile lib log public test tmp vendor package.json Gemfile.lock"
 
 git checkout .
 
