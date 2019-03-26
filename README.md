@@ -1,18 +1,18 @@
-# Ruby on rails Development environment
-  
-  
+# Ruby on Rails Development environment on PostgreSQL
+
 ## Create development environment
 
 Please run the rails-compose.sh script.
-  
-  
+
+```
+touch .env
+sh rails-compose.sh
+```
+
 ## Initialization of development environment
 
 Please run the rails-rm.sh script.
-  
-  
-## Delete all docker container & images
 
-Please run the docker-rm.sh script.
-
-**Delete all docker environments. Please do not use it when other environment exists.**
+```
+sh rails-rm.sh
+```
