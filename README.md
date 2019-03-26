@@ -1,4 +1,4 @@
-# Ruby on Rails Development environment on PostgreSQL
+# Ruby on Rails Development environment on MySQL
 
 ## Create development environment
 
