@@ -5,7 +5,6 @@
 Please run the rails-compose.sh script.
 
 ```
-touch .env
 sh rails-compose.sh
 ```
 
