@@ -21,9 +21,11 @@ docker-compose exec db mysql -hdb -e "ALTER USER 'root'@'%' IDENTIFIED WITH mysq
 sed -ie 's/password:/password: password/g' config/database.yml
 sed -ie 's/host: localhost/host: db/g' config/database.yml
 
-aleep 10
+docker-compose up -d
 
-docker-compose up -d && docker-compose exec api rake db:create
+sleep 15
+
+docker-compose exec api rake db:create
 
 echo "# Mysql DB Volume" >> .gitignore
 echo "mysql/volumes/*" >> .gitignore
