@@ -24,3 +24,6 @@ sed -ie 's/host: localhost/host: db/g' config/database.yml
 aleep 10
 
 docker-compose up -d && docker-compose exec api rake db:create
+
+echo "# Mysql DB Volume" >> .gitignore
+echo "mysql/volumes/*" >> .gitignore

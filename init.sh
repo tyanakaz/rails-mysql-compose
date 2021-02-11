@@ -2,7 +2,7 @@
 
 REMOVEFILE="app db bin config config.ru  Rakefile lib log public test tmp vendor package.json Gemfile.lock .env .gitattributes .ruby-version storage"
 
-git checkout Gemfile README.md
+git checkout Gemfile README.md .gitignore
 
 rm -rf $REMOVEFILE
 
