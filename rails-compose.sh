@@ -18,9 +18,9 @@ sleep 5
 
 docker-compose exec db mysql -hdb -e "ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'password';"
 
-aleep 5
-
 sed -ie 's/password:/password: password/g' config/database.yml
 sed -ie 's/host: localhost/host: db/g' config/database.yml
+
+aleep 10
 
 docker-compose up -d && docker-compose exec api rake db:create
