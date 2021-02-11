@@ -23,7 +23,7 @@ docker-compose up -d
 
 sleep 15
 
-docker-compose exec db mysql -hdb -ppassword -e "ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'password';"
+docker-compose exec db mysql -hdb -e "ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'password';"
 docker-compose exec api rake db:create
 
 echo "# Mysql DB Volumes" >> .gitignore
