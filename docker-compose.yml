@@ -6,7 +6,7 @@ services:
       MYSQL_USER: root
       MYSQL_ROOT_PASSWORD: password
     volumes:
-      - ./db/mysql/volumes:/var/lib/mysql
+      - ./mysql/volumes:/var/lib/mysql
       #- ./db/mysql/conf:/etc
 
   api:
