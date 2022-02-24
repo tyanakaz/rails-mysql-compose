@@ -18,6 +18,7 @@ sleep 5
 
 sed -ie 's/password:/password: password/g' config/database.yml
 sed -ie 's/host: localhost/host: db/g' config/database.yml
+sed -ie 's/config.file_watcher = ActiveSupport::EventedFileUpdateChecker/# config.file_watcher = ActiveSupport::EventedFileUpdateChecker/g' config/environments/development.rb
 
 docker-compose up -d
 

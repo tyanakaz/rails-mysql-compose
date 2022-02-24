@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REMOVEFILE="app db bin config config.ru  Rakefile lib log public test tmp vendor package.json Gemfile.lock .env .gitattributes .ruby-version storage mysql/volumes"
+REMOVEFILE="app db bin config config.ru Rakefile lib log public test tmp vendor package.json Gemfile.lock .env .gitattributes .ruby-version storage mysql/volumes"
 
 git checkout Gemfile README.md .gitignore
 
