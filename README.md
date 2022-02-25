@@ -10,8 +10,8 @@ sh rails-compose.sh
 
 ## Initialization of development environment
 
-Please run the rails-rm.sh script.
+Please run the init.sh script.
 
 ```
-sh rails-rm.sh
+sh init.sh
 ```
