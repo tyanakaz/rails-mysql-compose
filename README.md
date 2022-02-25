@@ -13,5 +13,5 @@ sh rails-compose.sh
 Please run the rails-rm.sh script.
 
 ```
-sh rails-rm.sh
+sh init.sh
 ```
