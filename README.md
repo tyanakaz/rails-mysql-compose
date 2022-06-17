@@ -1,17 +1,24 @@
-# Ruby on Rails Development environment on MySQL
+# README
 
-## Create development environment
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Please run the rails-compose.sh script.
+Things you may want to cover:
 
-```
-sh rails-compose.sh
-```
+* Ruby version
 
-## Initialization of development environment
+* System dependencies
 
-Please run the init.sh script.
+* Configuration
 
-```
-sh init.sh
-```
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
