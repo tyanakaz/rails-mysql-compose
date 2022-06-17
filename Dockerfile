@@ -4,6 +4,6 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ADD Gemfile /usr/src/app/Gemfile
 ADD Gemfile.lock /usr/src/app/Gemfile.lock
-RUN gem update --system # version 2.3.7に不具合があるため、Bundler のバージョンをあげる
+RUN gem update --system # Bundler version 2.3.7 に不具合があるため、Bundler のバージョンをあげる
 RUN bundle install
 ADD . /usr/src/app
