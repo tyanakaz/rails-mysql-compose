@@ -40,4 +40,4 @@ docker-compose exec api rake db:create
 echo "# Mysql DB Volumes" >> .gitignore
 echo "mysql/volumes/*" >> .gitignore
 
-echo "FinishedFinished"
+echo "Finished"
