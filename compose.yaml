@@ -1,0 +1,32 @@
+name: "rails_mysql_compose"
+
+services:
+  app:
+    build:
+      context: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_USER_NAME: myapp
+      DB_PASSWORD: mypassword
+      DATABASE_NAME: myapp
+
+  db:
+    image: mysql:8.4.2
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  
+      MYSQL_DATABASE: myapp            
+      MYSQL_USER: myapp                
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - ./mysql/volumes:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - "3306:3306"

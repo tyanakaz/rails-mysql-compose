@@ -1,9 +1,0 @@
-version: '3'
-
-volumes:
-  api_sync:
-    external: true
-services:
-  api:
-    volumes:
-      - api_sync:/usr/src/app
