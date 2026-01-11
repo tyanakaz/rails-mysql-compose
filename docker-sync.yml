@@ -1,5 +1,3 @@
-version: '2'
-
 syncs:
   api-volume:
     src: '.'
@@ -8,4 +6,3 @@ syncs:
 options:
   compose-file-path: 'docker-compose.yml'
   compose-dev-file-path: 'docker-compose-with-sync.yml'
-
